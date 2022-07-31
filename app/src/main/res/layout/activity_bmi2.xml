@@ -28,7 +28,7 @@
             android:layout_height="195dp">
 
             <TextView
-                android:id="@+id/tvWeight"
+                android:id="@+id/sumn"
                 android:layout_width="201dp"
                 android:layout_height="61dp"
                 android:scrollbarStyle="insideOverlay"
@@ -45,7 +45,7 @@
                 app:layout_constraintVertical_bias="0.119" />
 
             <EditText
-                android:id="@+id/etWeight"
+                android:id="@+id/etsum"
                 android:layout_width="110dp"
                 android:layout_height="86dp"
                 android:ems="10"
@@ -145,7 +145,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/btnCalc"
+        android:id="@+id/btnCalco"
         android:layout_width="190dp"
         android:layout_height="69dp"
         android:backgroundTint="@color/btn_color"
@@ -188,7 +188,7 @@
                 android:textSize="50sp" />
 
             <TextView
-                android:id="@+id/tvDescp"
+                android:id="@+id/tvsum"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"

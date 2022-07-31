@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         var devCard = findViewById<CardView>(R.id.dev)
         var prCard = findViewById<CardView>(R.id.pr)
         var dsCard = findViewById<CardView>(R.id.ds)
+        var sumCard=findViewById<CardView>(R.id.sum)
 
         bmiCard.setOnClickListener{
             val intent = Intent(this,BMI2::class.java)
@@ -36,6 +37,10 @@ class MainActivity : AppCompatActivity() {
         dsCard.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse("https://www.desmos.com/calculator")
+            startActivity(intent)
+        }
+        sumCard.setOnClickListener{
+            val intent = Intent(this,sum::class.java)
             startActivity(intent)
         }
     }
