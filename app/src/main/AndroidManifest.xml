@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.calco">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CALCO"
+        tools:targetApi="31">
+        <activity
+            android:name=".Dev2"
+            android:exported="false" />
+        <activity
+            android:name=".TC2"
+            android:exported="false" />
+        <activity
+            android:name=".BMI2"
+            android:exported="false" />
+        <activity
+            android:name=".BMIcalc"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+![](../../../../../../../var/folders/bh/klz4fyvx55jc516_8xryx_fm0000gn/T/TemporaryItems/NSIRD_screencaptureui_uRjZPQ/Screen Shot 2022-07-25 at 17.51.08.png)
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
