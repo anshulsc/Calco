@@ -12,9 +12,9 @@ class BMI2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bmi2)
-        val weightText = findViewById<EditText>(R.id.etWeight)
+        val weightText = findViewById<EditText>(R.id.etsum)
         val heightText = findViewById<EditText>(R.id.etHeight)
-        val Calculatebtn = findViewById<Button>(R.id.btnCalc)
+        val Calculatebtn = findViewById<Button>(R.id.btnCalco)
 
         Calculatebtn.setOnClickListener {
             val weight = weightText.text.toString()
@@ -46,7 +46,7 @@ class BMI2 : AppCompatActivity() {
     }
     private fun displayResult(bmi:Float){
         val index = findViewById<TextView>(R.id.tvIndex)
-        val descp = findViewById<TextView>(R.id.tvDescp)
+        val descp = findViewById<TextView>(R.id.tvsum)
         val info =  findViewById<TextView>(R.id.tvInfo)
 
         index.text = bmi.toString()

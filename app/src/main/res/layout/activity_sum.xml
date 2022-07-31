@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".BMI2">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvWeight"
+        android:layout_width="335dp"
+        android:layout_height="152dp"
+        android:background="@color/teal_700"
+        android:backgroundTint="@color/card_color"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="362dp"
+            android:layout_height="233dp">
+
+            <TextView
+                android:id="@+id/sumn"
+                android:layout_width="250dp"
+                android:layout_height="61dp"
+                android:scrollbarStyle="insideOverlay"
+                android:text="Value of N:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.142"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.119" />
+
+            <EditText
+                android:id="@+id/etsum"
+                android:layout_width="110dp"
+                android:layout_height="86dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="numberSigned"
+                android:textColor="@color/white"
+                android:textColorHint="#929292"
+                android:textSize="55sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.115"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.495" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnCalco"
+        android:layout_width="190dp"
+        android:layout_height="69dp"
+        android:backgroundTint="@color/btn_color"
+        android:text="Calculate"
+        app:circularflow_defaultRadius="30dp"
+        app:cornerRadius="100dp"
+        app:icon="@android:drawable/ic_menu_send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvInfo"
+        android:layout_width="305dp"
+        android:layout_height="192dp"
+        app:cardBackgroundColor="@color/card_color"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.846">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvIndex"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:shadowColor="#302C2C"
+                android:shadowDx="56"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvsum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/underweight"
+                android:textSize="50sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
